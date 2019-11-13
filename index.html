@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>naloga</title>
+    <link rel="stylesheet" href="naloga.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>
+        schreiben sie
+        <br>
+        uns eine
+        <br>
+        nachricht
+    </h1>
+    <hr>
+
+    <form action="" method="get">
+        <div id='messageSide' class='container'>
+            <p>Ich interessiere mich für ...</p>
+            <textarea id='tArea' style='height:220px' required ></textarea>
+            <p class='reqField'><span class='star'>*</span> required field</p>
+        </div>
+
+        <div id='formSide' class='container'>
+            <div id='radio'>
+                <p>Anrede</p>
+                <input id='female' type="radio" name="gender" value='Female'>
+                <label class='radioL' for="female">Frau</label>
+                    
+                <input id='male' type="radio" name="gender" value='Male'>
+                <label class='radioL' for="male">Herr</label>
+                    
+                <input id='other' type="radio" name="gender" value='Non-specified' checked>
+                <label class='radioL' for="other">Keine Angabe</label>
+            </div>
+            
+            <label for="name">Ihr Name</label>
+            <br>
+            <input class='areaF' type="text" name="name" id="name" required>
+            <p class='reqField'><span class='star'>*</span> required field</p>
+            <br>
+            <label for="eMail">Ihr E-Mail-Adresse</label>
+            <br>
+            <input class='areaF' type="email" name="eMail" id="eMail" required>
+            <p class='reqField'><span class='star'>*</span> required field</p>
+
+            <input id='btn' type="submit" value="Send     >">
+        </div>
+    </form>
+    
+    <script src="naloga.js"></script>
+</body>
+</html>

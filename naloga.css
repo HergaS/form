@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFDCF8;
+    padding: 20px 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin: 0 0 3px 0;
+}
+
+/* Header */
+h1 {
+    color: #D504AA;
+    clear: both;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+hr {
+    border-bottom: solid #D504AA 1px;
+    margin-right: 95%;
+}
+
+/* Forms */
+.container {
+    height: 300px;
+    float: left;
+    padding: 5px 5%;
+}
+
+#tArea {
+    width: 100%;
+}
+
+.areaF {
+    width: 100%;
+    padding: 10px;
+}
+
+.star {
+    color: #D504AA;
+}
+
+.reqField {
+    font-weight: lighter;
+    font-size: 70%;
+}
+
+/* Submit button */
+#btn {
+    background-color: #D504AA;
+    border: none;
+    color: white;
+    padding: 10px 20px 10px 30px;
+    text-decoration: none;
+    margin: 10px 0 0 80%;
+    cursor: pointer;
+    box-shadow: 0 0 6px 1px gray;
+}
+
+/* Radiobutton styles */
+#radio {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.radioL {
+    margin-right: 5%;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+  
+/* appearance for checked radiobutton */
+input[type="radio"]:checked {
+    background-color: #D504AA;
+}
+
+
+/* Phone and tablet look */
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    #messageSide {
+        border-bottom: solid #cccbcc 1.5px;
+        margin-bottom: 50px;
+    }
+
+    #formSide {
+        margin-bottom: 50px;
+    }
+}
+
+/* Computer screen look */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 50%;
+    }
+    #messageSide {
+        border-right: solid #cccbcc 1.5px;
+    }
+}
